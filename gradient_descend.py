@@ -17,7 +17,7 @@ def y_derivative(x):
 x = np.arange(-5,5,0.1)
 y = y_function(x)
 
-current_pos = (1,y_function(1))
+current_pos = (1.55,y_function(1))
 
 learning_rate = 0.01
 
