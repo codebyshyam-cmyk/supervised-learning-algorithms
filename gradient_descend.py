@@ -1,16 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def y_function(x):
+"""def y_function(x):
     return x**2
 
 def y_derivative(x):
     return 2*x
 
-x = np.arange(-100,100,0.1)
+x = np.arange(-100,100,0.1)"""
+
+def y_function(x):
+    return np.sin(x)
+
+def y_derivative(x):
+    return np.cos(x)
+x = np.arange(-5,5,0.1)
 y = y_function(x)
 
-current_pos = (80,y_function(80))
+current_pos = (1,y_function(1))
 
 learning_rate = 0.01
 
