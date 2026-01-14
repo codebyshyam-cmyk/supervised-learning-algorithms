@@ -1,8 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-week = [1,2,3,4,5]
-car_saleS=[2,4,5,4,5]
+
 
 
 training_set = pd.read_csv("Salary Data.csv")
@@ -49,7 +48,7 @@ def gradient_descent(x,y,alpha,iterations):
     return w,b
 
 learning_rate =  0.01
-iterations =  1000
+iterations =  100000
 
 final_w,final_b = gradient_descent(x,y,learning_rate,iterations)
 
