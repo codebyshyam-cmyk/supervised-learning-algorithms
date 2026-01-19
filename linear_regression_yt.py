@@ -43,16 +43,19 @@ def gradient_descent(x,y,alpha,iterations):
         w =  w - alpha * dc_dw
         b =  b - alpha * dc_db
 
-        print(f" Iterations {i} : cost {cost_fuction(x,y,w,b)}")
+        #print(f" Iterations {i} : cost {cost_fuction(x,y,w,b)}")
 
     return w,b
 
 learning_rate =  0.01
-iterations =  100000
+iterations =  1000
 
 final_w,final_b = gradient_descent(x,y,learning_rate,iterations)
-
-x_vals = np.linspace(min(x),max(x),100)
+print(final_w,final_b)
+user_input = float(input('enter the x value to predict the y value'))
+"""x_vals = np.linspace(min(x),max(x),100)
 y_vals = final_w* x_vals + final_b
 plt.plot(x_vals,y_vals,color='red',label = 'regression line')
-plt.show()
+plt.show()"""
+new_y_value = final_w * user_input + final_b
+print(new_y_value)
